@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orange;
+  height: 220px;
+  margin-top: 20px;
+  padding:  0 30px;
+}
+.col h2 {
+     font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+.col p {
+  max-width: 240px;
+  font-size: 18px;
+  color: cornsilk;
+}
+.links  h3 {
+   font-size: 20px;
+}
+.links ul {
+  list-style-type: none;
+}
+.links ul li a {
+   text-decoration: none;
+   font-size: 18px;
+   color: cornsilk;
+}
+.links ul li a:hover {
+  text-decoration: underline;
+}
+.contact h3  {
+  font-size: 20px;
+}
+.contact address {
+     font-size: 18px;
+}
+.newsletter h3  {
+    font-size: 20px;   
+}
+.newsletter p {
+       font-size: 18px;
+}
+.newsletter form label {
+  font-size: 20px;
+}
+.newsletter button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  background-color: orangered;
+  cursor: pointer;
+}
+.newsletter button:hover{
+    background-color: rgb(203, 58, 6);
+
+}
+#sb-email{
+   width: 60%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+.socials a {
+     text-decoration: none;
+    font-size: 40px;
+    color: aliceblue;
+}
+.socials a:hover {
+      color: black;  
+}
+.legal {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px 27px;
+  background-color: orange;
+}
+.footer-nav {
+  margin-right: 30px;
+}
+.footer-nav a {
+  color: black;
+  text-decoration: none;
+}
+@media (max-width:820px) {
+
+
+.footer {
+   flex-direction: column;
+       align-items: flex-start;
+        padding: 20px 20px;
+        gap: 10px;
+        height: 590px;
+        margin-top: 80px;
+}
+.legal {
+  display: block;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+}
+@media (min-width:821px) {
+
+    
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orange;
+  height: 220px;
+  margin-top: 20px;
+  padding:  0 30px;
+}
+
+.legal {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px 27px;
+  background-color: orange;
+}
+.footer-nav {
+  margin-right: 30px;
+}
+}

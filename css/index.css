@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+}
+.hero-section {
+     margin-top: 120px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 30px;  
+    
+}
+.hero-section h2 {
+      font-size: 40px;
+      font-weight: bold;
+   }
+.hero-section  p {
+   max-width: 400px;
+ 
+}
+.btn {
+     padding: 10px 20px;
+     border-radius: 10px;
+     border: none;
+      font-weight: bold;
+      background-color: aqua;
+      margin-top: 10px;
+}
+.btn:hover {
+  background-color: rgb(2, 206, 206);
+}
+.hero-section img {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      }
+.dish-header {
+   display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px 30px;
+}
+.dish-header a {
+  text-decoration: none;
+   color: black;
+    font-size: 20px;
+}
+.dish-header a:hover {
+  text-decoration: underline;
+}
+
+.p-dish {
+  text-align: center; 
+  font-size: 22px;
+   margin-top: -40px;
+   color: black;
+}
+.p-dish:hover {
+  text-decoration: underline;
+}
+.feature-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.feature img {
+    width: 200px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: 2px solid white;
+}
+.feature p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+.feature p:hover{
+  text-decoration: underline;
+}
+.booking-container p{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.booking-container p:hover{
+  text-decoration: underline;
+}
+.booking-form {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .booking-form select,
+  .booking-form input[type="date"] {
+    padding: 10px;
+    background-color: rgb(15, 162, 211);
+    border-radius: 4px;
+    border: none;
+    outline: 1px solid white;
+  }
+  
+  .booking-form button {
+    padding: 10px 20px;
+    background-color: #c5a15e; /* Golden brown */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: 1px solid white;
+  }
+
+.back-to-top p{
+  text-align: center;
+  margin-top: 20px;
+}
+.back-to-top a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+    /*banner section*/
+.banner-section {
+    width: 100%;
+    height: 440px;
+    background-image: url("../images/image%204.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.banner-section h2 {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+.banner-section p {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.banner-section button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.banner-section button:hover {
+  background-color: rgb(59, 57, 57);
+}
+
+
+@media (max-width:820px) {
+     
+ .hero-section {
+      flex-direction: column-reverse;  
+       gap: 110px;
+ }
+ .hero-section img {
+  height: 100%;
+  width: 100%;
+ }
+ .hero-section h2 {
+      text-align: center;
+      font-size: 37px;
+   }
+.hero-section  p {
+ text-align: center;
+}
+
+.btn {
+      display: block;
+      width: max-content;
+      margin: 10px auto;
+      align-self: center;  
+}
+.p-dish {
+  text-align: left;
+  padding: 0 10px;
+}
+.feature-sec {
+  flex-direction: column;
+}
+.feature img {
+  width: 300px;
+  height: 200px;
+}
+.feature p {
+  font-size: 20px;
+}
+.booking-container p{
+  color: blue;
+}
+.booking-form{
+   gap: 40px;
+   flex-direction: column;
+}
+.banner-section {
+         text-align: center;
+         padding: 0 10px;
+    }
+    .banner-section h2 {
+      font-size: 37px;
+    }
+       .banner-section p {
+        color: white;
+        font-size: 27px;
+       }
+}
+
+
+@media (min-width:821px) { 
+.hero-section {
+     margin-top: 120px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 30px;  
+    
+}
+ .hero-section img {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      }
+ .hero-section h2 {
+      font-size: 40px;
+      font-weight: bold;
+   }
+.hero-section  p {
+   max-width: 400px;
+ 
+}
+
+.btn {
+     padding: 10px 20px;
+     border-radius: 10px;
+     border: none;
+      font-weight: bold;
+      background-color: aqua;
+      margin-top: 10px;
+}
+.p-dish {
+  text-align: center; 
+  font-size: 22px;
+   margin-top: -40px;
+   color: black;
+}
+.feature-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.feature img {
+    width: 200px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: 2px solid white;
+}
+.feature p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+.booking-container p{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.booking-form {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+}

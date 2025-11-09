@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+.navbar p {
+  padding: 0 17px;
+  font-size: 27px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.navlink {
+    padding: 0.5rem;
+    list-style-type: none;
+  
+}
+.navlink li {
+    display: inline-block;
+}
+.navlink li a {
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    font-style: italic;
+}
+.navlink li a:hover {
+  text-decoration: underline;
+}
+.navlink li a.active {
+    color: aqua;
+    font-size: 24px;
+    text-decoration: underline;
+}
+.dropdown{
+    position: relative;
+   display: inline;
+   color: blue;
+  }
+  .dropdown:hover{
+      border-radius: 20px;
+      padding: 5px;
+  }
+ .dropdown-content{
+     display: none;
+     position: absolute;
+     top: 30px;
+     background-image: url("../images/image\ 11.webp");
+    backdrop-filter: blur(90px);
+    border-radius: 14px;
+    border: 2px solid black;
+     min-width: 60px;
+     padding: 12px 50px 0 0;
+     z-index: 1;
+ }
+ .dropdown-content a{
+     color: black;
+     padding: 12px 16px;
+     display: block;
+ }
+ .dropdown-content a:hover{
+    
+     border-radius: 20px;
+    
+ }
+ .dropdown:hover .dropdown-content{
+     display: block;
+ }
+.btn-sub {
+    background-color: white;
+    color: black;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-sub:hover{
+  background-color: rgb(225, 225, 225);
+}
+.one {
+  display: none;
+}
+.burger  {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bars {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin:  4px 0;
+    border-radius: 10px;
+}
+.close {
+  display: none;
+}
+@media (max-width:820px) {
+               .btn-sub {
+      display: none;
+    }
+   .burger {
+    display: inline-block;
+   }
+     .navlink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: orange;
+         flex-direction: column;
+         width: 70%;
+        height: 100vh;
+        line-height: 4;
+        position: fixed;
+        top: 0;
+        right: -600px;
+        transition: 1.3s linear;
+    }
+      .close {
+        display: flex;
+        color: black;
+        position: absolute;
+        right: 10px;
+        font-size: 60px;
+        top: -72px;
+        cursor: pointer;
+    }
+    .act {
+      right: 0;
+    }
+    .one {
+      display: flex;
+    }
+    .dropdown-content {
+      position: absolute;
+     top: -30px;
+     right: 70px;
+    background-image: url("../pictures/pexels-photo-70497.jpeg");
+    backdrop-filter: blur(30px);
+    border-radius: 14px;
+    border: 2px solid black;
+     height: 280px;
+    }
+    .dropdown-content a:hover{
+         text-decoration: underline;
+ }
+}
+@media (min-width:821px) { 
+             .btn-sub {
+    background-color: white;
+    color: black;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+   .burger {
+    display: none;
+   }
+     .navlink {
+         padding: 0.5rem;
+    list-style-type: none;
+  
+    }
+      .close {
+        display: flex;
+        color: black;
+        position: absolute;
+        right: 10px;
+        font-size: 60px;
+        top: -72px;
+        cursor: pointer;
+    }
+    .act {
+      right: 0;
+    }
+    .one {
+      display: none;
+    }
+    .dropdown-content {
+     display: none;
+     position: absolute;
+     top: 30px;
+    background-image: url("../pictures/pexels-photo-70497.jpeg");
+    backdrop-filter: blur(30px);
+    border-radius: 14px;
+    border: 2px solid black;
+     min-width: 60px;
+     padding: 12px 50px 0 0;
+     z-index: 1;
+ }
+}
